@@ -58,10 +58,15 @@ nav{
     flex-direction: row;
     list-style-type: none;
 }
+.nav-links a{
+    color: #4a4a4a; /* Default dark text color */
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
 .nav-links li{
     margin-right: 25px;
     text-decoration: none;
-    
     cursor: pointer;
 }
 .nav-links li a{
@@ -70,6 +75,21 @@ nav{
     font-weight: bold;
     font-size: 1.1em;
 }
+.nav-links a:hover,
+.nav-links a:focus {
+  border-bottom: #FF9A9A 1px solid;
+  border-radius: 5px;
+  scroll-behavior: smooth;
+}
+
+.nav-links a.active {
+    color: #ffffff; /* White text for active link */
+    font-weight: bold; /* Bold for active link */
+    background-color: #007BFF; /* Optional: Add background highlight */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 main{
     padding-top: 120px;
     margin: 0;
@@ -270,14 +290,9 @@ main{
     margin: 0;
     font-weight: 600
 }
-.certifications{
-    height: 500px;
-    width: 100%;
-    border: 1px solid gray;
-}
 .skills{
-    padding-top: 60px;
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     height: 450px;
     width: 100%;
     display: flex;
@@ -371,3 +386,81 @@ main{
     color: #5E4665;
     text-align: center;
 }
+
+.certifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px; 
+    background-color: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-direction: column;
+  }
+.certifications-header{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.certifications-header h2{
+    color: #5E4665;
+    font-size: 2em;
+}  
+.slider-container {
+    position: relative;
+    width: 55%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.slide-btn {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: rgba(0, 0, 0, 0.5);
+color: #fff;
+border: none;
+cursor: pointer;
+padding: 10px;
+z-index: 1000;
+}
+
+.left-btn {
+left: 10px;
+}
+
+.right-btn {
+right: 10px;
+}
+
+.slide-btn:hover {
+background-color: rgba(0, 0, 0, 0.7);
+}
+  
