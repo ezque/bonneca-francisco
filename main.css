@@ -13,7 +13,7 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    height: 100px;
+    height: 90px;
     width: 100%;
     z-index: 1000;
     background-color: #C7DCFF;
@@ -59,7 +59,7 @@ nav{
     text-decoration: none;
     color: #5E4665;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 main{
     padding-top: 120px;
