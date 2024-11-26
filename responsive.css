@@ -2,13 +2,16 @@
     body {
         font-family: 'poppins', sans-serif;
         margin: 0;
-        background-color: #C7DCFF;
     }
     header {
         height: 70px;
         display: flex;
         flex-direction: row;
         align-items: center;
+        padding: 0;
+    }
+    main{
+        padding-top: 70px;
     }
     .header-image-con {
         width: 13%;
@@ -39,36 +42,41 @@
     }
     .home-main{
         padding: 0;
-        margin-left: 20px;
     }
     .home-main h1 {
         font-size: 2.5em;
+        margin-left: 20px;
     }
     .home-main p{
         font-size: 1em;
+        margin-left: 20px;
     }
 
     .home-main h6 {
         font-size: 1.2em;
+        margin-left: 20px;
     }
 
     .home-main a {
         padding: 10px 15px;
         font-size: 0.9em;
+        margin-left: 20px;
     }
 
     .home-icon-con {
         flex-direction: column;
-        gap: 5px;
+        gap: 3px;
     }
     .home-icon-con a{
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
     }
 
     .about {
         padding-top: 50px;
         height: auto;
+        padding-left: 0;
+        padding-right: 0;
         flex-direction: column;
     }
 
@@ -104,6 +112,8 @@
         width: 100%;
     }
     .skills{
+        padding-left: 0;
+        padding-right: 0;
         padding-top: 50px;
         padding-bottom: 50px;
         height: auto;
@@ -114,6 +124,7 @@
         justify-content: center;
         align-items: center;
         padding: 0;
+        gap: 10px;
     }
 
     .skills-left-con,
@@ -121,23 +132,30 @@
         width: 80%;
         height: 80%;
     }
+    .skills-left-con img,
+    .tools-right-con img{
+        width: 80%;
+        height: 80%;
+    }
     .contact{
         height: auto;
-        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
     .contact-main {
         flex-direction: row;
-        gap: 20px;
+        gap: 10px;
     }
 
     .phone-con,
     .email-con,
     .linkedin-con {
         flex-direction: row;
+        margin: 10px;
     }
     .phone-img,.email-img,.linkedin-img{
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -149,6 +167,13 @@
     .phone-text,.email-text,.linkedin-text{
         font-size: .6em;
         color: #5E4665;
+    }
+    .certifications{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .slider-container {
+        height: 70%;
     }
 }
 .burger-menu {
@@ -189,6 +214,8 @@
         justify-content: start;
         gap: 10px;
         margin-top: 100px;
+        text-align: center;
+        font-size: .8em;
     }
 
     .nav-links li a {

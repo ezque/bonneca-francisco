@@ -1,0 +1,30 @@
+@media (max-width: 360px) {
+    body{
+        margin: 0;
+    }
+    header{
+        padding: 0;
+    }
+    .home{
+        padding: 0;
+        border: 1px solid black;
+    }
+    .about{
+        padding: 0;
+    }
+    .experience{
+        padding: 0;
+    }
+    .certifications{
+        padding: 0;
+    }
+    .skills{
+        padding: 0;
+    }
+    .contact{
+        padding: 0;
+    }
+    main{
+        width: 100%;
+    }
+}

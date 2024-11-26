@@ -78,15 +78,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav-links a');
 
   function updateActiveLink() {
-    let fromTop = window.scrollY;
+    let fromTop = window.scrollY + 100; // Adjust the offset for better detection
+    let currentActive = null; // Variable to store the current active link
 
+    sections.forEach((section, index) => {
+      // Check if the section is the closest to the top
+      if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+        currentActive = navLinks[index];
+      }
+    });
+
+    // Update the active state
     navLinks.forEach(link => {
-      let section = document.querySelector(link.getAttribute('href'));
-
-      if (
-        section.offsetTop <= fromTop + 100 && // Section in view
-        section.offsetTop + section.offsetHeight > fromTop
-      ) {
+      if (link === currentActive) {
         link.classList.add('active');
       } else {
         link.classList.remove('active');
@@ -94,5 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Add scroll event listener
   window.addEventListener('scroll', updateActiveLink);
 });
