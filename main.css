@@ -14,22 +14,31 @@ header {
     justify-content: space-between;
     flex-direction: row;
     height: 90px;
-    width: 100%;
     z-index: 1000;
     background-color: #C7DCFF;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+    box-sizing: border-box;
 }
 .header-image-con{
     width: 8%;
     height: 90%;
-    background-color: white;
     border-radius:  20px 0 20px 0;
     margin-left: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.header-image-con img{
+.header-image-con a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-image-con a img{
     width: auto;
     height: 100%;
 }
@@ -75,6 +84,9 @@ main{
     justify-content: center;
     background-color: #C7DCFF;
     padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
 }
 .home-main{
     width: 80%;
@@ -93,7 +105,7 @@ main{
 }
 .home-main h1{
     margin: 0;
-    font-size: 5em;
+    font-size: 4.8em;
     color: #FF9A9A;
 }
 .home-main h6{
@@ -143,12 +155,16 @@ main{
 .about{
     padding-top: 100px;
     padding-bottom: 50px;
-    height: 600px;
+    height: 700px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #FFFFFFB2;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
 }
 .about-header{
     width: 80%;
@@ -260,8 +276,8 @@ main{
     border: 1px solid gray;
 }
 .skills{
-    padding-top: 150px;
-    padding-bottom:150px;
+    padding-top: 60px;
+    padding-bottom: 50px;
     height: 450px;
     width: 100%;
     display: flex;
@@ -293,12 +309,16 @@ main{
     height: 150px;
     width: 100%;
     background-color: #FF9A9A;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
 }
 .contact-header{
     width: 100%;
     height: 30%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 .contact-header h2{
@@ -349,4 +369,5 @@ main{
 .phone-text,.email-text,.linkedin-text{
     font-size: 1em;
     color: #5E4665;
+    text-align: center;
 }
