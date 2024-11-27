@@ -77,16 +77,16 @@ nav{
 }
 .nav-links a:hover,
 .nav-links a:focus {
-  border-bottom: #FF9A9A 1px solid;
+  border-bottom: #FF9A9A 3px solid;
   border-radius: 5px;
   scroll-behavior: smooth;
+  padding-bottom: 5px;
 }
 
 .nav-links a.active {
-    color: #ffffff;
     font-weight: bold;
-    background-color: #007BFF;
-    padding: 5px 10px;
+    border-bottom: #FF9A9A 5px solid;
+    padding-bottom: 5px;
     border-radius: 5px;
 }
 
