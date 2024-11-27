@@ -4,7 +4,7 @@ html{
 body {
     font-family: 'poppins', sans-serif;
     margin: 0;
-    background-color: #C7DCFF;
+    background-color: beige;
 }
 header {
     color: #fff;
@@ -15,7 +15,7 @@ header {
     flex-direction: row;
     height: 90px;
     z-index: 1000;
-    background-color: #C7DCFF;
+    background-color: whitesmoke;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding-left: 100px;
     padding-right: 100px;
@@ -102,7 +102,7 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #C7DCFF;
+    background-color: beige;
     padding-top: 100px;
     padding-left: 100px;
     padding-bottom: 50px;
@@ -324,7 +324,7 @@ main{
 .contact{
     height: 150px;
     width: 100%;
-    background-color: #FF9A9A;
+    background-color: whitesmoke;
     padding-left: 100px;
     padding-right: 100px;
     box-sizing: border-box;
@@ -360,8 +360,6 @@ main{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 170px;
 }
 .phone-con,.email-con,.linkedin-con{
     width: 25%;
@@ -378,9 +376,13 @@ main{
     align-items: center;
     justify-content: center;
 }
-.phone-img img,.email-img img,.linkedin-img img{
+.phone-img img,.email-img img{
     width: auto;
     height: 100%;
+}
+.linkedin-img img{
+    width: auto;
+    height: 70%;
 }
 .phone-text,.email-text,.linkedin-text{
     font-size: 1em;
@@ -442,23 +444,23 @@ main{
 }
 
 .slide-btn {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-background-color: rgba(0, 0, 0, 0.5);
-color: #fff;
-border: none;
-cursor: pointer;
-padding: 10px;
-z-index: 1000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
 }
 
 .left-btn {
-left: 10px;
+    left: 10px;
 }
 
 .right-btn {
-right: 10px;
+    right: 10px;
 }
 
 .slide-btn:hover {
